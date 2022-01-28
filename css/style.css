@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+img {
+  max-width: 100%;
+  width: auto;
+}
+header,
+footer {
+  background: #4d164f;
+  color: white;
+}
+header {
+  padding: 1em;
+}
+main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+section {
+  width: 80%;
+  margin: auto;
+}
+.sub-sections {
+  width: 40%;
+  margin: 1em auto;
+}
+section p {
+  text-align: left;
+  margin-top: 0;
+}
+a {
+  color: white;
+}
+@media print  {
+  h2 {
+    color: black;
+  }
+  section {
+    width: 90%;
+  }
+  .sub-sections {
+    width: 45%;
+    margin: 0 .5em;
+  }
+  section p:first-letter {
+    font-family: "Times New Roman";
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 .3em;
+  }
+  footer {
+    display: none;
+    top: 0;
+    bottom: auto;
+  }
+}

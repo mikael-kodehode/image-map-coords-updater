@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML og CSS oppgave 2022.01.25</title>
+</head>
+<body>
+  <header>
+    <h1>Picture, img map, style media</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Click to learn more about:</h2>
+      <picture>
+        <source srcset="images/img_450.png" media="(max-width: 700px)">
+        <source srcset="images/img_650.jpg" media="(max-width: 900px)">
+        <img id="items" src="images/img_map.jpg" alt="multiple clickable objects to buy" usemap="#items">
+        <map name="items">
+            <area class="map-area" target="" alt="Pads" title="Pads" href="subcats/pads.html" coords="179,204,132" shape="circle">
+            <area class="map-area" target="" alt="Computers" title="Computers" href="subcats/computers.html" coords="517,210,135" shape="circle">
+            <area class="map-area" target="" alt="Laptops" title="Laptops" href="subcats/laptops.html" coords="841,209,133" shape="circle">
+            <area class="map-area" target="" alt="Headphones" title="Headphones" href="subcats/headphones.html" coords="183,521,131" shape="circle">
+            <area class="map-area" target="" alt="Smartphones" title="Smartphones" href="subcats/smartphones.html" coords="510,519,134" shape="circle">
+            <area class="map-area" target="" alt="Cameras" title="Cameras" href="subcats/cameras.html" coords="841,518,135" shape="circle">
+            <area class="map-area" target="" alt="Coffee" title="Coffee" href="subcats/coffee.html" coords="182,821,136" shape="circle">
+            <area class="map-area" target="" alt="Clocks" title="Clocks" href="subcats/clocks.html" coords="510,818,131" shape="circle">
+            <area class="map-area" target="" alt="Smartscreens" title="Smartscreens" href="subcats/smartscreens.html" coords="842,810,142" shape="circle">
+        </map>
+      </picture>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
